@@ -1,0 +1,27 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "rules": {
+    "linebreak-style": [2, "unix"],
+    "no-underscore-dangle": 0,
+    "semi": [2, "always"],
+    "prefer-const": [2],
+    "comma-dangle": ["error", "always-multiline"],
+    "indent": 0,
+    "no-shadow": 0,
+    "no-alert": 0,
+    "strict": 0,
+    "react-native/no-unused-styles": 2,
+    "react-native/split-platform-components": 2,
+    "react-native/no-inline-styles": 2
+  },
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "jest": true,
+    "react-native/react-native": true
+  },
+  "globals": {
+    "env": true
+  },
+  "plugins": ["react", "react-native"]
+}
