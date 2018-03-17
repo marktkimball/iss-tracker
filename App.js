@@ -1,21 +1,24 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { COLOR, ThemeProvider } from 'react-native-material-ui';
+import { Main } from './src/components/main';
+
+const uiTheme = {
+  palette: {
+    primaryColor: COLOR.indigo500,
+  },
+  toolbar: {
+    container: {
+      height: 50,
+    },
+  },
+};
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>ISS Tracker is up and running!</Text>
-      </View>
+      <ThemeProvider uiTheme={uiTheme}>
+        <Main />
+      </ThemeProvider>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
