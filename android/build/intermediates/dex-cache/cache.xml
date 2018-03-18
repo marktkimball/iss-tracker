@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-java-geojson/2.2.9/c53f47c9fdf762ae6fd86efd056da7a1651a0fed/mapbox-java-geojson-2.2.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c53f47c9fdf762ae6fd86efd056da7a1651a0fed">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/mapbox-java-geojson-2.2.9_96096c1decdc2b03b98682b14ca0987993eccbd1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-telemetry/2.2.9/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="612aa385190830bd6db2f01552caf3519835dc9a">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.mapbox.mapboxsdk-mapbox-android-telemetry-2.2.9_58fd201dc23d70ab5778e252acd0c0e2ab517148.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/27.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fe3916317a699975bcce0cba2d13fd2d8cf88922">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-27.0.2_4c79c87a028552fb4b838ad364871b7602ea8789.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/27.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ed6560f31a6a40b5965f5879d8f2eab1f68def05">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-27.0.2_549943614ed737bb1f4519368db5dd0fab237d84.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-plugin-locationlayer/0.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b1cad667a0222bae157d31a08af83400e470a05f">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.mapbox.mapboxsdk-mapbox-android-plugin-locationlayer-0.3.0_d52ee20cc0eccb378a325ada430c16835c86049a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/isstracker/mapbox-react-native-mapbox-gl/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3d9893239573b6af660de579d06d08a5b8cc0861">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/isstracker-mapbox-react-native-mapbox-gl-unspecified_8143e099c9e7860fe763228dfa2996e1f06fd348.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/27.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ac2ce6027755bcf49442e70597bec0feb9064f68">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-27.0.2_ecb35c60691273f5a4e5ef8a59fb11f3972e8e37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0b9ef4342c934a1a8b107506273dc8061662a322">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/support-annotations-27.0.2_5aeb5beaac883b6dc40762111ee14780034609ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_ba8e6f97e039377faff84ff7b52657a430dc5753.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-services/2.2.9/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9adc627fc283339f926c4e10d82a42bc39e0d77f">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.mapbox.mapboxsdk-mapbox-android-services-2.2.9_459c11bfe66242c59a142e347c8f530790a15cd8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.2.0/a09926806199499a20b2f5168779499abfa33342/converter-gson-2.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a09926806199499a20b2f5168779499abfa33342">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/converter-gson-2.2.0_c0d883a63271c0486772249395e6f68e4af7e635.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_1d1200d0ca54f5f6cae90651b395625ae99ab702.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.9.1/84b4b7d1c4a238e7899972b7446c250691e65f1f/okhttp-3.9.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="84b4b7d1c4a238e7899972b7446c250691e65f1f">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/okhttp-3.9.1_fd0b2f2d9fbf56de643bf92a4f8538c0c01a18c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_9f01a2599f7fb0066e6537aa00b5f837a98cff6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/common-1.0.0_0c67ac3649aa3d1a46549ca07989ddf6224b83bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.mapbox.mapboxsdk/mapbox-android-sdk/5.4.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="68eea7ff8efd77b77cdca73805f85caf7e40be04">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.mapbox.mapboxsdk-mapbox-android-sdk-5.4.1_e118267d308457852c310fea1fc924ec4ee2f2c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_c6b52c513253e4b1eb93ac153dc84a931300088b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.jakewharton.timber/timber/4.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c4b2d07f780d8b29d39c0daf1129d544e726cc1b">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.jakewharton.timber-timber-4.6.0_b5fce18766b526b14c070b06c4c0f140c5be9d9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/27.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="caa03787689212c10939f308a55a8dc8a3333ed2">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-27.0.2_a0597ffbd33c5dcf6c573fd498e58126287e426a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_aaeca0ae2ab0e858a53ec0d4ec7a7f394f52c3c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.2.0/41e67dba73c3347e4503761642c39d0e06ca1f2/retrofit-2.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="041e67dba73c3347e4503761642c39d0e06ca1f2">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/retrofit-2.2.0_af90811fdeaf5eff1c33080e7df3542cc13b676c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_faf1559bb9376d803db03b0d7f969aa2c8fd9974.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_2da5d89ff5ca1a65db21b044dd6b4abe22dfe428.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-java-core/2.2.9/c18aa432e1830aba56d861494f131a34a0b8ce69/mapbox-java-core-2.2.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c18aa432e1830aba56d861494f131a34a0b8ce69">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/mapbox-java-core-2.2.9_279d0f7cffa87de815792e0eef8a212b5658ad97.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_3e238261f2b8033dd3c259f699f7d4608180d8aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="04cd0cacbedcb338f64665b88bad64d145325fbd">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-27.0.2_caffdfcb2fc4057570bb2af948dbe60cb13ae591.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_717dc39faaf35aa8cd206964a4694a309b0d6f04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_c5780b168f5c00111c6b0bc42480c88269c08161.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.mapzen.android/lost/3.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d35b57785e805406538454943d0ed0ba97f6e653">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.mapzen.android-lost-3.0.4_eef1e555f5c5428f3c63e69a2985c811a4228cb4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="af61eb11ffb4296cab0c93218248a3dfcec0a84c">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.52.0_ff83f6376940054526d951ca91d07106b9a38d6e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_39d2211c55034676d1ead492b0cdce15780cde67.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7d7f60c4783872861222166f6164215f8951c7b1">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/common-1.0.3_75214e31d4996ecea3be249390831b73cc53af1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/27.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="618f75fe11febf263e3234c7da7dc892232a5608">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-27.0.2_8a0c11b98419f2446bf6a2d1abb2f7faa9784ba1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-java-services/2.2.9/32099854fcd364940c562d83c1394aa917faa79b/mapbox-java-services-2.2.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="32099854fcd364940c562d83c1394aa917faa79b">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/mapbox-java-services-2.2.9_fa498b4aea025d34213c21fc5b08f458abb76e56.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/27.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b432e82447a3af781e927b9ba0bbb9fe2a496d4a">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-27.0.2_2a2e3919b9301c81e5b806d5bb8841ed8abb5401.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_6d293d8a091359c3965fcae553e1adc8b1d9eda9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_8479a81285ad2bc51ad9b68053053a632a94bda0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/android.arch.lifecycle/runtime/1.0.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7cc5473b9cf4ea159a263cd477fb3ecb2987b96">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/android.arch.lifecycle-runtime-1.0.3_0954db58b231dfcb6586c7076995b31fb3a6ab40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/gson-2.8.0_b65e6419eaad91f1d1c696d5d426d62194c822bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_e07d3139d4148bb99f1e487ba6758daf557795a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.6.0/81887458b69ddc32722df7e4c35235fd74e6a8ba/logging-interceptor-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="81887458b69ddc32722df7e4c35235fd74e6a8ba">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/logging-interceptor-3.6.0_06d914a858cb8698c31a8a8a385fa925fb83e14f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_f9c5775a5be6a9487312c23e3f61250678674f02.jar" />
+    </item>
+
+</items>

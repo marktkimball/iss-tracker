@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/27.0.2/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/27.0.2/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/27.0.2/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/27.0.2/res/layout-v21/notification_action_tombstone.xml"
+    }
+]

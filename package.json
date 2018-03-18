@@ -2,12 +2,10 @@
   "name": "iss-tracker",
   "version": "0.1.0",
   "private": true,
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "android": "react-native-scripts android",
-    "eject": "react-native-scripts eject",
-    "ios": "react-native-scripts ios",
-    "start": "react-native-scripts start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
     "test": "node node_modules/jest/bin/jest.js"
   },
   "babel": {
@@ -23,21 +21,23 @@
     }
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "react-native"
   },
   "dependencies": {
-    "expo": "^25.0.0",
+    "@mapbox/react-native-mapbox-gl": "^6.1.0",
+    "axios": "^0.18.0",
+    "prop-types": "^15.6.1",
     "react": "16.2.0",
     "react-native": "0.52.0",
-    "react-native-material-ui": "^1.20.0"
+    "react-native-material-ui": "^1.20.0",
+    "react-native-vector-icons": "^4.5.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "eslint": "^4.19.0",
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-react-native": "^3.2.1",
-    "jest-expo": "25.0.0",
-    "react-native-scripts": "1.11.1",
+    "jest-react-native": "^18.0.0",
     "react-test-renderer": "16.2.0"
   }
 }

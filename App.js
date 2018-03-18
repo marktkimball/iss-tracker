@@ -4,7 +4,7 @@ import { Main } from './src/components/main';
 
 const uiTheme = {
   palette: {
-    primaryColor: COLOR.indigo500,
+    primaryColor: COLOR.blue500,
   },
   toolbar: {
     container: {

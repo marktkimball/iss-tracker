@@ -2,5 +2,7 @@
   "expo": {
     "name": "ISS Tracker",
     "sdkVersion": "25.0.0"
-  }
+  },
+  "name": "isstracker",
+  "displayName": "ISS Tracker"
 }

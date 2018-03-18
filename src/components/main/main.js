@@ -1,17 +1,46 @@
 import React from 'React';
-import { StatusBar, StyleSheet, Text, View } from 'react-native';
+import axios from 'axios';
+import { StatusBar, StyleSheet, View } from 'react-native';
 import { Toolbar } from 'react-native-material-ui';
+
+import { Map } from '../map';
 import { cssVariables } from '../../css-variables';
 
 export class Main extends React.Component {
   static displayName = 'Main';
 
+  state = {
+    issLocation: {
+      latitude: 0,
+      longitude: 0,
+    },
+  };
+
+  componentWillMount() {
+    axios
+      .get('http://api.open-notify.org/iss-now.json')
+      .then(({ data: { iss_position: { latitude, longitude } } }) => {
+        this.setState({
+          issLocation: {
+            latitude: 1 * latitude,
+            longitude: 1 * longitude,
+          },
+        });
+      })
+      .catch(() =>
+        this.setState({
+          issLocation: { latitude: 40.611509, longitude: -111.91499 },
+        }),
+      );
+  }
+
   render() {
+    const { latitude, longitude } = this.state.issLocation;
     return (
       <View style={styles.container}>
         <StatusBar hidden />
         <Toolbar centerElement="ISS Tracker" />
-        <Text>ISS Tracker is up and running!</Text>
+        <Map latitude={latitude} longitude={longitude} />
       </View>
     );
   }
