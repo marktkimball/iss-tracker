@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, View } from 'react-native';
 import { COLOR } from 'react-native-material-ui';
-// import { MAP_BOX_ACCESS_TOKEN } from '../../../config.json';
+import { MAP_BOX_ACCESS_TOKEN } from '../../../config.json';
 
 import Mapbox from '@mapbox/react-native-mapbox-gl';
 
-Mapbox.setAccessToken('');
+Mapbox.setAccessToken(MAP_BOX_ACCESS_TOKEN);
 
 export class Map extends Component {
   static displayName = 'Map';
