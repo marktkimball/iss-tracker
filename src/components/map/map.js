@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, View } from 'react-native';
 import { COLOR } from 'react-native-material-ui';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { MAP_BOX_ACCESS_TOKEN } from '../../../config.json';
 
 import Mapbox from '@mapbox/react-native-mapbox-gl';
@@ -22,9 +23,7 @@ export class Map extends Component {
       id="pointAnnotation"
       coordinate={[longitude, latitude]}
     >
-      <View style={styles.annotationContainer}>
-        <View style={styles.annotationFill} />
-      </View>
+      <Icon name="satellite-variant" size={40} color={COLOR.grey200} />
       <Mapbox.Callout title="International Space Station" />
     </Mapbox.PointAnnotation>
   );
@@ -52,20 +51,5 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     height: '100%',
-  },
-  annotationContainer: {
-    width: 30,
-    height: 30,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'white',
-    borderRadius: 15,
-  },
-  annotationFill: {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
-    backgroundColor: COLOR.deepOrange500,
-    transform: [{ scale: 0.6 }],
   },
 });
