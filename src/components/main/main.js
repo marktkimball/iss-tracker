@@ -17,6 +17,19 @@ export class Main extends React.Component {
   };
 
   componentWillMount() {
+    this.getISSLocation();
+    this.timer = setInterval(() => this.tick(), 5000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+
+  tick = () => {
+    this.getISSLocation();
+  };
+
+  getISSLocation = () =>
     axios
       .get('http://api.open-notify.org/iss-now.json')
       .then(({ data: { iss_position: { latitude, longitude } } }) => {
@@ -32,7 +45,6 @@ export class Main extends React.Component {
           issLocation: { latitude: 40.611509, longitude: -111.91499 },
         }),
       );
-  }
 
   render() {
     const { latitude, longitude } = this.state.issLocation;
