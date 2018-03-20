@@ -14,10 +14,11 @@ export class Main extends React.Component {
       latitude: 0,
       longitude: 0,
     },
+    centerCoordinate: [0, 0],
   };
 
   componentWillMount() {
-    this.getISSLocation();
+    this.getISSLocation(true);
     this.timer = setInterval(() => this.tick(), 5000);
   }
 
@@ -29,7 +30,7 @@ export class Main extends React.Component {
     this.getISSLocation();
   };
 
-  getISSLocation = () =>
+  getISSLocation = isInitial =>
     axios
       .get('http://api.open-notify.org/iss-now.json')
       .then(({ data: { iss_position: { latitude, longitude } } }) => {
@@ -38,6 +39,9 @@ export class Main extends React.Component {
             latitude: 1 * latitude,
             longitude: 1 * longitude,
           },
+          centerCoordinate: isInitial
+            ? [1 * longitude, 1 * latitude]
+            : [...this.state.centerCoordinate],
         });
       })
       .catch(() =>
@@ -47,12 +51,19 @@ export class Main extends React.Component {
       );
 
   render() {
-    const { latitude, longitude } = this.state.issLocation;
+    const {
+      centerCoordinate,
+      issLocation: { latitude, longitude },
+    } = this.state;
     return (
       <View style={styles.container}>
         <StatusBar hidden />
         <Toolbar centerElement="ISS Tracker" />
-        <Map latitude={latitude} longitude={longitude} />
+        <Map
+          centerCoordinate={centerCoordinate}
+          latitude={latitude}
+          longitude={longitude}
+        />
       </View>
     );
   }

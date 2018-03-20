@@ -13,6 +13,7 @@ export class Map extends Component {
   static displayName = 'Map';
 
   static propTypes = {
+    centerCoordinate: PropTypes.arrayOf(PropTypes.number).isRequired,
     latitude: PropTypes.number.isRequired,
     longitude: PropTypes.number.isRequired,
   };
@@ -29,14 +30,14 @@ export class Map extends Component {
   );
 
   render() {
-    const { latitude, longitude } = this.props;
+    const { centerCoordinate, latitude, longitude } = this.props;
 
     return (
       <View style={styles.container}>
         <Mapbox.MapView
           styleURL={Mapbox.StyleURL.Dark}
           zoomLevel={2}
-          centerCoordinate={[longitude, latitude]}
+          centerCoordinate={centerCoordinate}
           style={styles.container}
         >
           {this.renderAnnotations(longitude, latitude)}
