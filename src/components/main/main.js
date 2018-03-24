@@ -1,10 +1,9 @@
 import React from 'React';
 import axios from 'axios';
 import { StatusBar, StyleSheet, View } from 'react-native';
-import { Toolbar } from 'react-native-material-ui';
-
+import { COLOR, Toolbar } from 'react-native-material-ui';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Map } from '../map';
-import { cssVariables } from '../../css-variables';
 
 export class Main extends React.Component {
   static displayName = 'Main';
@@ -58,7 +57,18 @@ export class Main extends React.Component {
     return (
       <View style={styles.container}>
         <StatusBar hidden />
-        <Toolbar centerElement="ISS Tracker" />
+        <Toolbar
+          centerElement="ISS Tracker"
+          rightElement={
+            <Icon
+              color={COLOR.white}
+              name="crosshairs-gps"
+              onPress={() => this.getISSLocation(true)}
+              size={24}
+              style={styles.crosshairs}
+            />
+          }
+        />
         <Map
           centerCoordinate={centerCoordinate}
           latitude={latitude}
@@ -72,9 +82,10 @@ export class Main extends React.Component {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: cssVariables['--color-white'],
+    backgroundColor: COLOR.white,
     flex: 1,
     height: '100%',
     width: '100%',
   },
+  crosshairs: { marginRight: 12 },
 });

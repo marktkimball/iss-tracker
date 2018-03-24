@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, View } from 'react-native';
+import Mapbox from '@mapbox/react-native-mapbox-gl';
 import { COLOR } from 'react-native-material-ui';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { MAP_BOX_ACCESS_TOKEN } from '../../../config.json';
-
-import Mapbox from '@mapbox/react-native-mapbox-gl';
 
 Mapbox.setAccessToken(MAP_BOX_ACCESS_TOKEN);
 
