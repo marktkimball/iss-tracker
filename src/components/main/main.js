@@ -1,6 +1,6 @@
 import React from 'React';
 import axios from 'axios';
-import { StatusBar, StyleSheet, View } from 'react-native';
+import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { COLOR, Toolbar } from 'react-native-material-ui';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Map } from '../map';
@@ -45,7 +45,7 @@ export class Main extends React.Component {
       })
       .catch(() =>
         this.setState({
-          issLocation: { latitude: 40.611509, longitude: -111.91499 },
+          issLocation: { latitude: 0, longitude: 0 },
         }),
       );
 
@@ -56,18 +56,28 @@ export class Main extends React.Component {
     } = this.state;
     return (
       <View style={styles.container}>
-        <StatusBar hidden />
+        <StatusBar animated backgroundColor="rgba(0, 0, 0, 0.24)" translucent />
+        {Platform.OS === 'android' && Platform.Version >= 20 ? (
+          <View style={styles.statusBar} />
+        ) : null}
         <Toolbar
           centerElement="ISS Tracker"
-          rightElement={
-            <Icon
-              color={COLOR.white}
-              name="crosshairs-gps"
-              onPress={() => this.getISSLocation(true)}
-              size={24}
-              style={styles.crosshairs}
-            />
-          }
+          rightElement={{
+            actions: [
+              <Icon
+                key="re-center"
+                color={COLOR.white}
+                name="crosshairs-gps"
+                onPress={() => this.getISSLocation(true)}
+                size={24}
+                style={styles.icon}
+              />,
+            ],
+            menu: {
+              icon: 'more-vert',
+              labels: ['Settings', 'Location'],
+            },
+          }}
         />
         <Map
           centerCoordinate={centerCoordinate}
@@ -81,11 +91,14 @@ export class Main extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
     backgroundColor: COLOR.white,
     flex: 1,
     height: '100%',
     width: '100%',
   },
-  crosshairs: { marginRight: 12 },
+  icon: { alignSelf: 'center' },
+  statusBar: {
+    backgroundColor: COLOR.deepPurple500,
+    height: 24,
+  },
 });
