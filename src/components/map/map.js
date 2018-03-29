@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, View } from 'react-native';
+import { Colors as COLORS } from 'react-native-paper';
 import Mapbox from '@mapbox/react-native-mapbox-gl';
-import { COLOR } from 'react-native-material-ui';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { MAP_BOX_ACCESS_TOKEN } from '../../../config.json';
 
@@ -23,7 +23,7 @@ export class Map extends Component {
       id="pointAnnotation"
       coordinate={[longitude, latitude]}
     >
-      <Icon name="satellite-variant" size={40} color={COLOR.grey200} />
+      <Icon name="satellite-variant" size={40} color={COLORS.grey200} />
       <Mapbox.Callout title="International Space Station" />
     </Mapbox.PointAnnotation>
   );

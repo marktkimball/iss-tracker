@@ -29,7 +29,7 @@
     "prop-types": "^15.6.1",
     "react": "16.2.0",
     "react-native": "0.52.0",
-    "react-native-material-ui": "^1.20.0",
+    "react-native-paper": "^1.2.5",
     "react-native-vector-icons": "^4.5.0"
   },
   "devDependencies": {
