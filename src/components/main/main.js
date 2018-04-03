@@ -1,6 +1,8 @@
 import React from 'React';
+import PropTypes from 'prop-types';
 import axios from 'axios';
-import { Platform, StatusBar, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { withRouter } from 'react-router';
 import {
   Colors as COLORS,
   Toolbar,
@@ -11,8 +13,12 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Map } from '../map';
 import { MoreMenu } from '../menu';
 
-export class Main extends React.Component {
+class MainApp extends React.Component {
   static displayName = 'Main';
+
+  static propTypes = {
+    history: PropTypes.object,
+  };
 
   state = {
     centerCoordinate: [0, 0],
@@ -58,8 +64,18 @@ export class Main extends React.Component {
       );
 
   handleMenuPress = (action, index) => {
+    const { history } = this.props;
     if (action === 'itemSelected') {
-      console.warn('Pressed:', action, index); //eslint-disable-line
+      switch (index) {
+        case 0:
+          history.push('/settings');
+          break;
+        case 1:
+          history.push('/feedback');
+          break;
+        default:
+          return;
+      }
     }
   };
 
@@ -70,10 +86,6 @@ export class Main extends React.Component {
     } = this.state;
     return (
       <View style={styles.container}>
-        <StatusBar animated backgroundColor="rgba(0, 0, 0, 0.24)" translucent />
-        {Platform.OS === 'android' && Platform.Version >= 20 ? (
-          <View style={styles.statusBar} />
-        ) : null}
         <Toolbar>
           <ToolbarContent title="ISS Tracker" />
           <ToolbarAction
@@ -112,8 +124,6 @@ const styles = StyleSheet.create({
     height: '100%',
     width: '100%',
   },
-  statusBar: {
-    backgroundColor: COLORS.deepPurple500,
-    height: 24,
-  },
 });
+
+export const Main = withRouter(MainApp);
