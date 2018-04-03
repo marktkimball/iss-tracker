@@ -30,7 +30,10 @@
     "react": "16.2.0",
     "react-native": "0.52.0",
     "react-native-paper": "^1.2.5",
-    "react-native-vector-icons": "^4.5.0"
+    "react-native-vector-icons": "^4.5.0",
+    "react-router": "^4.2.0",
+    "react-router-native": "^4.2.0",
+    "react-router-navigation": "^1.0.0-rc.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",

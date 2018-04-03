@@ -9,17 +9,20 @@ import {
 } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Map } from '../map';
+import { MoreMenu } from '../menu';
 
 export class Main extends React.Component {
   static displayName = 'Main';
 
   state = {
+    centerCoordinate: [0, 0],
     issLocation: {
       latitude: 0,
       longitude: 0,
     },
-    centerCoordinate: [0, 0],
   };
+
+  MORE_MENU_ACTIONS = ['Settings', 'Feedback and Support'];
 
   componentWillMount() {
     this.getISSLocation(true);
@@ -54,6 +57,12 @@ export class Main extends React.Component {
         }),
       );
 
+  handleMenuPress = (action, index) => {
+    if (action === 'itemSelected') {
+      console.warn('Pressed:', action, index); //eslint-disable-line
+    }
+  };
+
   render() {
     const {
       centerCoordinate,
@@ -76,18 +85,14 @@ export class Main extends React.Component {
                 onPress={() => this.getISSLocation(true)}
               />
             }
-            onPress={this._onSearch}
           />
           <ToolbarAction
             icon={
-              <Icon
-                color={COLORS.white}
-                name="dots-vertical"
-                size={24}
-                onPress={() => {}}
+              <MoreMenu
+                actions={this.MORE_MENU_ACTIONS}
+                onPress={this.handleMenuPress}
               />
             }
-            onPress={null}
           />
         </Toolbar>
         <Map
