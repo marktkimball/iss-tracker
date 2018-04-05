@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, View } from 'react-native';
+import { AsyncStorage, StyleSheet, View } from 'react-native';
 import { Colors as COLORS } from 'react-native-paper';
 import Mapbox from '@mapbox/react-native-mapbox-gl';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -17,29 +17,50 @@ export class Map extends Component {
     longitude: PropTypes.number.isRequired,
   };
 
-  renderAnnotations = (longitude, latitude) => (
+  state = {
+    mapTheme: 'dark',
+  };
+
+  async componentWillMount() {
+    try {
+      const mapTheme = await AsyncStorage.getItem('@preferences:mapTheme');
+      if (mapTheme) {
+        this.setState({ mapTheme });
+      }
+    } catch (error) {
+      console.warn('Failed to retrieve user map theme'); // eslint-disable-line
+    }
+  }
+  renderAnnotations = (longitude, latitude, mapTheme) => (
     <Mapbox.PointAnnotation
       key="pointAnnotation"
       id="pointAnnotation"
       coordinate={[longitude, latitude]}
     >
-      <Icon name="satellite-variant" size={40} color={COLORS.grey200} />
+      <Icon
+        name="satellite-variant"
+        size={40}
+        color={mapTheme === 'dark' ? COLORS.grey200 : COLORS.grey800}
+      />
       <Mapbox.Callout title="International Space Station" />
     </Mapbox.PointAnnotation>
   );
 
   render() {
     const { centerCoordinate, latitude, longitude } = this.props;
+    const { mapTheme } = this.state;
 
     return (
       <View style={styles.container}>
         <Mapbox.MapView
-          styleURL={Mapbox.StyleURL.Dark}
+          styleURL={
+            mapTheme === 'dark' ? Mapbox.StyleURL.Dark : Mapbox.StyleURL.Light
+          }
           zoomLevel={2}
           centerCoordinate={centerCoordinate}
           style={styles.container}
         >
-          {this.renderAnnotations(longitude, latitude)}
+          {this.renderAnnotations(longitude, latitude, mapTheme)}
         </Mapbox.MapView>
       </View>
     );

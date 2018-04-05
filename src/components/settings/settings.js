@@ -1,6 +1,6 @@
 import React from 'React';
 import PropTypes from 'prop-types';
-import { StyleSheet, View } from 'react-native';
+import { AsyncStorage, StyleSheet, View } from 'react-native';
 import {
   Button,
   Caption,
@@ -29,12 +29,42 @@ export class Settings extends React.Component {
 
   state = {
     showMapThemeDialog: false,
+    mapTheme: 'dark',
   };
+
+  MAP_THEMES = {
+    dark: 'Dark',
+    light: 'Light',
+  };
+
+  async componentWillMount() {
+    try {
+      const mapTheme = await AsyncStorage.getItem('@preferences:mapTheme');
+      if (mapTheme) {
+        this.setState({ mapTheme });
+      }
+    } catch (error) {
+      console.warn('Failed to retrieve user map theme'); // eslint-disable-line
+    }
+  }
 
   toggleMapThemeDialog = () =>
     this.setState({ showMapThemeDialog: !this.state.showMapThemeDialog });
 
+  updateUserMapTheme = async mapTheme => {
+    try {
+      await AsyncStorage.setItem('@preferences:mapTheme', mapTheme);
+      this.setState({ mapTheme });
+    } catch (error) {
+      // eslint-disable-next-line
+      console.warn(
+        `Error saving map theme preference of: ${mapTheme}, error: ${error}`,
+      );
+    }
+  };
+
   render() {
+    const { mapTheme } = this.state;
     return (
       <View style={styles.container}>
         <Toolbar>
@@ -53,7 +83,7 @@ export class Settings extends React.Component {
         <TouchableRipple onPress={this.toggleMapThemeDialog}>
           <View style={styles.option}>
             <Subheading>Map Theme</Subheading>
-            <Caption>Dark</Caption>
+            <Caption>{this.MAP_THEMES[mapTheme]}</Caption>
           </View>
         </TouchableRipple>
         <Dialog
@@ -64,16 +94,20 @@ export class Settings extends React.Component {
           <DialogTitle>Map Theme</DialogTitle>
           <DialogContent>
             <RadioButtonGroup
-              onValueChange={value => console.warn('VALUE', value)}
-              value={'dark'}
+              onValueChange={value => this.updateUserMapTheme(value)}
+              value={mapTheme}
             >
               <View style={styles.radioOption}>
                 <RadioButton value="dark" />
-                <Paragraph style={styles.radioButtonText}>Dark</Paragraph>
+                <Paragraph style={styles.radioButtonText}>
+                  {this.MAP_THEMES['dark']}
+                </Paragraph>
               </View>
               <View style={styles.radioOption}>
                 <RadioButton value="light" />
-                <Paragraph style={styles.radioButtonText}>Light</Paragraph>
+                <Paragraph style={styles.radioButtonText}>
+                  {this.MAP_THEMES['light']}
+                </Paragraph>
               </View>
             </RadioButtonGroup>
           </DialogContent>
