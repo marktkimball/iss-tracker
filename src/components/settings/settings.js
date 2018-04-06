@@ -65,6 +65,7 @@ export class Settings extends React.Component {
 
   render() {
     const { mapTheme } = this.state;
+
     return (
       <View style={styles.container}>
         <Toolbar>

@@ -29,7 +29,7 @@ export default class App extends React.Component {
         ) : null}
         <NativeRouter>
           <Navigation hideNavBar>
-            <Card exact path="/" component={Main} mapTheme={'light'} />
+            <Card exact path="/" component={Main} />
             <Card exact path="/settings" component={Settings} />
             <Card exact path="/feedback" component={Feedback} />
           </Navigation>
