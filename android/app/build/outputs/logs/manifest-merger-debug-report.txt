@@ -81,7 +81,7 @@ MERGED from [com.jakewharton.timber:timber:4.6.0] /Users/mark.kimball/Documents/
 		ADDED from /Users/mark.kimball/Documents/sites/iss-tracker/android/app/src/main/AndroidManifest.xml:18:7-38
 	android:name
 		ADDED from /Users/mark.kimball/Documents/sites/iss-tracker/android/app/src/main/AndroidManifest.xml:14:7-38
-activity#com.isstracker.MainActivity
+activity#com.orbitwatch.MainActivity
 ADDED from /Users/mark.kimball/Documents/sites/iss-tracker/android/app/src/main/AndroidManifest.xml:19:7-28:18
 	android:label
 		ADDED from /Users/mark.kimball/Documents/sites/iss-tracker/android/app/src/main/AndroidManifest.xml:21:9-41

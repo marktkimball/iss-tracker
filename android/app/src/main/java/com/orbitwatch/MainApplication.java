@@ -1,4 +1,4 @@
-package com.isstracker;
+package com.orbitwatch;
 
 import android.app.Application;
 
