@@ -4,6 +4,7 @@ import { AsyncStorage, StyleSheet, View } from 'react-native';
 import { Colors as COLORS } from 'react-native-paper';
 import Mapbox from '@mapbox/react-native-mapbox-gl';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { Notification } from '../notification';
 import { MAP_BOX_ACCESS_TOKEN } from '../../../config.json';
 
 Mapbox.setAccessToken(MAP_BOX_ACCESS_TOKEN);
@@ -18,6 +19,7 @@ export class Map extends Component {
   };
 
   state = {
+    error: null,
     mapTheme: 'dark',
   };
 
@@ -28,7 +30,9 @@ export class Map extends Component {
         this.setState({ mapTheme });
       }
     } catch (error) {
-      console.warn('Failed to retrieve user map theme'); // eslint-disable-line
+      this.setState({
+        error: 'Unable to retrieve your preferred map theme. Setting to Dark.',
+      });
     }
   }
   renderAnnotations = (longitude, latitude, mapTheme) => (
@@ -48,10 +52,11 @@ export class Map extends Component {
 
   render() {
     const { centerCoordinate, latitude, longitude } = this.props;
-    const { mapTheme } = this.state;
+    const { error, mapTheme } = this.state;
 
     return (
       <View style={styles.container}>
+        <Notification message={error} type="error" />
         <Mapbox.MapView
           styleURL={
             mapTheme === 'dark' ? Mapbox.StyleURL.Dark : Mapbox.StyleURL.Light

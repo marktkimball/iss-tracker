@@ -19,6 +19,7 @@ import {
   TouchableRipple,
 } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { Notification } from '../notification';
 
 export class Settings extends React.Component {
   static displayName = 'Settings';
@@ -28,8 +29,9 @@ export class Settings extends React.Component {
   };
 
   state = {
-    showMapThemeDialog: false,
+    error: null,
     mapTheme: 'dark',
+    showMapThemeDialog: false,
   };
 
   MAP_THEMES = {
@@ -44,7 +46,9 @@ export class Settings extends React.Component {
         this.setState({ mapTheme });
       }
     } catch (error) {
-      console.warn('Failed to retrieve user map theme'); // eslint-disable-line
+      this.setState({
+        error: 'Unable to retrieve your preferred map theme.',
+      });
     }
   }
 
@@ -56,15 +60,14 @@ export class Settings extends React.Component {
       await AsyncStorage.setItem('@preferences:mapTheme', mapTheme);
       this.setState({ mapTheme });
     } catch (error) {
-      // eslint-disable-next-line
-      console.warn(
-        `Error saving map theme preference of: ${mapTheme}, error: ${error}`,
-      );
+      this.setState({
+        error: `Unable to save your map theme preference of: ${mapTheme}. Please try again.`,
+      });
     }
   };
 
   render() {
-    const { mapTheme } = this.state;
+    const { error, mapTheme } = this.state;
 
     return (
       <View style={styles.container}>
@@ -81,6 +84,7 @@ export class Settings extends React.Component {
           />
           <ToolbarContent title="Settings" />
         </Toolbar>
+        <Notification message={error} toolbarPadding type="error" />
         <TouchableRipple onPress={this.toggleMapThemeDialog}>
           <View style={styles.option}>
             <Subheading>Map Theme</Subheading>
