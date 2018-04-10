@@ -66,6 +66,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/isstracker/react-native-splash-screen/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="81545e78a5aef654b2e0aac62b2be5ad8ad7b908">
+        <dex dex="/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/pre-dexed/debug/isstracker-react-native-splash-screen-unspecified_6c10dba8659b68aad486249b8cd608cb73d01b72.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/mark.kimball/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar"
         jumboMode="false"
         optimize="true"

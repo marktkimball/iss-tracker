@@ -87,7 +87,7 @@ class MainApp extends React.Component {
     return (
       <View style={styles.container}>
         <Toolbar>
-          <ToolbarContent title="Orbit Watch" />
+          <ToolbarContent title="ISS Tracer" />
           <ToolbarAction
             icon={
               <Icon

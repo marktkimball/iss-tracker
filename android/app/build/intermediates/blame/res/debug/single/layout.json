@@ -160,6 +160,10 @@
         "source": "/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/layout/abc_alert_dialog_title_material.xml"
     },
     {
+        "merged": "/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/res/merged/debug/layout/launch_screen.xml",
+        "source": "/Users/mark.kimball/Documents/sites/iss-tracker/android/app/src/main/res/layout/launch_screen.xml"
+    },
+    {
         "merged": "/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
         "source": "/Users/mark.kimball/Documents/sites/iss-tracker/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/layout/abc_expanded_menu_layout.xml"
     },

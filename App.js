@@ -1,5 +1,6 @@
 import React from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 import {
   Colors as COLORS,
   DefaultTheme,
@@ -21,6 +22,10 @@ const theme = {
 };
 
 export default class App extends React.Component {
+  componentDidMount() {
+    SplashScreen.hide();
+  }
+
   render() {
     return (
       <PaperProvider theme={theme}>

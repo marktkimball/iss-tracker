@@ -123,10 +123,10 @@ public final class R {
 		public static final int userLocationView = 0x7f0c0081;
 	}
 	public static final class layout {
-		public static final int mapbox_attribution_list_item = 0x7f04001d;
-		public static final int mapbox_infowindow_content = 0x7f04001e;
-		public static final int mapbox_mapview_internal = 0x7f04001f;
-		public static final int mapbox_view_image_marker = 0x7f040020;
+		public static final int mapbox_attribution_list_item = 0x7f04001e;
+		public static final int mapbox_infowindow_content = 0x7f04001f;
+		public static final int mapbox_mapview_internal = 0x7f040020;
+		public static final int mapbox_view_image_marker = 0x7f040021;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f07002c;

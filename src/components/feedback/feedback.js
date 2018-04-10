@@ -115,6 +115,7 @@ export class Feedback extends React.Component {
             <Paragraph>- New Settings page to toggle map theme</Paragraph>
             <Paragraph>- New Feedback & Support page</Paragraph>
             <Paragraph>- App logo</Paragraph>
+            <Paragraph>- Splash screen</Paragraph>
           </DialogContent>
           <DialogActions>
             <Button onPress={this.toggleChangelogDialog}>Ok</Button>
