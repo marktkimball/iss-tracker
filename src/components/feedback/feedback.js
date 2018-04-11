@@ -17,6 +17,7 @@ import {
   TouchableRipple,
 } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { Notification } from '../notification';
 
 export class Feedback extends React.Component {
   static displayName = 'Feedback';
@@ -26,36 +27,49 @@ export class Feedback extends React.Component {
   };
 
   state = {
+    error: null,
     showChangelogDialog: false,
   };
 
   EMAIL = 'mkengineeringdev@gmail.com';
 
   handleOpenPlayStorePress = () => {
-    const playStoreUrl = 'market://'; // TODO: Update to actual Play Store route
+    const playStoreUrl = 'market://details?id=com.isstracer';
 
     Linking.canOpenURL(playStoreUrl)
       .then(supported => {
         if (!supported) {
-          console.warn(`Can't handle url: ${playStoreUrl}`); // eslint-disable-line
+          this.setState({
+            error: 'Unable to open Google Play Store. Please try again.',
+          });
         } else {
           return Linking.openURL(playStoreUrl);
         }
       })
-      .catch(err => console.error(`An error occurred: ${err}`)); // eslint-disable-line
+      .catch(() =>
+        this.setState({
+          error: 'Unable to open Google Play Store. Please try again.',
+        }),
+      );
   };
 
   handleEmailPress = () => {
-    const emailLink = `mailto:${this.EMAIL}?subject=ISS Tracker Feedback`;
+    const emailLink = `mailto:${this.EMAIL}?subject=ISS Tracer Feedback`;
     Linking.canOpenURL(emailLink)
       .then(supported => {
         if (!supported) {
-          console.warn(`Can't handle url: ${emailLink}`); // eslint-disable-line
+          this.setState({
+            error: 'Unable to open email. Please try again.',
+          });
         } else {
           return Linking.openURL(emailLink);
         }
       })
-      .catch(err => console.error(`An error occurred: ${err}`)); // eslint-disable-line
+      .catch(() =>
+        this.setState({
+          error: 'Unable to open email. Please try again.',
+        }),
+      );
   };
 
   toggleChangelogDialog = () =>
@@ -63,6 +77,7 @@ export class Feedback extends React.Component {
 
   render() {
     const { push } = this.props.history;
+    const { error } = this.state;
 
     return (
       <View style={styles.container}>
@@ -79,6 +94,7 @@ export class Feedback extends React.Component {
           />
           <ToolbarContent title="Feedback & Support" />
         </Toolbar>
+        <Notification message={error} toolbarPadding type="error" />
         <View>
           <Paragraph style={styles.heading}>Support</Paragraph>
           <TouchableRipple onPress={this.handleOpenPlayStorePress}>
@@ -99,7 +115,7 @@ export class Feedback extends React.Component {
           <TouchableRipple onPress={this.toggleChangelogDialog}>
             <View style={styles.option}>
               <Subheading>Changelog</Subheading>
-              <Caption>Version 0.1.0</Caption>
+              <Caption>Version 0.1.2</Caption>
             </View>
           </TouchableRipple>
         </View>
@@ -110,12 +126,15 @@ export class Feedback extends React.Component {
         >
           <DialogTitle>{`What's New`}</DialogTitle>
           <DialogContent>
-            <Paragraph style={styles.dialogHeading}>Version 0.1.0</Paragraph>
+            <Paragraph style={styles.dialogHeading}>Version 0.1.2</Paragraph>
             <Paragraph>- New Light map theme</Paragraph>
             <Paragraph>- New Settings page to toggle map theme</Paragraph>
             <Paragraph>- New Feedback & Support page</Paragraph>
             <Paragraph>- App logo</Paragraph>
             <Paragraph>- Splash screen</Paragraph>
+            <Paragraph>- Link to Google Play Store added</Paragraph>
+            <Paragraph>- Removes 2nd app icon when installed</Paragraph>
+            <Paragraph>- Better error handling</Paragraph>
           </DialogContent>
           <DialogActions>
             <Button onPress={this.toggleChangelogDialog}>Ok</Button>

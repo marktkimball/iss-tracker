@@ -1,7 +1,8 @@
 {
   "expo": {
     "name": "ISS Tracker",
-    "sdkVersion": "25.0.0"
+    "sdkVersion": "25.0.0",
+    "version": "0.1.2"
   },
   "name": "isstracker",
   "displayName": "ISS Tracer"

@@ -20,7 +20,7 @@ export class MoreMenu extends React.Component {
   icon = null;
 
   onError() {
-    console.warn('Popup Error'); // eslint-disable-line
+    console.warn('Unable to open menu'); // eslint-disable-line
   }
 
   onPress = () => {
